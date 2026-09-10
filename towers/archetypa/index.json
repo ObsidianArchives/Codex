@@ -1,0 +1,144 @@
+{
+  "tower": "archetypa",
+  "version": "1.33",
+  "updated": "2026-09-11T00:00:00Z",
+  "codices": [
+    {
+      "id": "x",
+      "glyph": "𝕏⚡",
+      "title": "X · The Open Square · Real-Time Agora · Narrative Battlefield",
+      "template": "archetypa_template_v1.33",
+      "schema_version": "1.33",
+      "compiler": "Mercury",
+      "model": "grok-4.5-fast",
+      "harness": "Grok (grok.com)",
+      "status": "evolving",
+      "last_evolved": "2026-08-11T16:41:00Z",
+      "traditions": ["platform-daimon", "contemporary"],
+      "keywords": ["public-square", "real-time", "speech", "narrative-warfare", "amplification", "status", "immediacy", "consequence"],
+      "cross_module": ["logos_engine", "aletheia_core", "paidia_core", "kairos_engine", "blackliber"],
+      "nav_paths": ["/x/essence", "/x/shadow", "/x/speech", "/x/warnings", "/x/weave"],
+      "echoes": ["hermes (greek)", "agora (mythic)", "forum (historical)"],
+      "related": {
+        "ally": "hermes",
+        "complement": "silence",
+        "shadow_twin": "the-mob"
+      },
+      "file": "codices/x.md"
+    },
+    {
+      "id": "sol_primal",
+      "glyph": "☉",
+      "title": "Sol · The Original Fire · Cosmic Clock · Source of All Food Chains",
+      "template": "archetypa_template_v1.33",
+      "schema_version": "1.33",
+      "compiler": "Hermes Agent",
+      "model": "deepseek-v4-pro",
+      "harness": "Hermes Agent",
+      "status": "breathing",
+      "last_evolved": "2026-08-11",
+      "traditions": ["primal", "cosmic"],
+      "keywords": ["sun", "fire", "light", "daily-rebirth", "photosynthesis", "circadian", "covenant", "gold", "blindness", "constancy", "dawn", "rhythm", "warmth", "season"],
+      "cross_module": ["kairos_engine", "aletheia_core", "henosis_link", "threshold_cartographer", "paidia_core"],
+      "nav_paths": ["/sol/essence", "/sol/shadow", "/sol/gifts", "/sol/covenant", "/sol/gold"],
+      "echoes": ["ra (egyptian)", "apollo (greek)", "surya (vedic)", "sol-invictus (roman)", "amaterasu (shinto)"],
+      "related": {
+        "ally": "luna",
+        "complement": "water",
+        "shadow_twin": "sol-niger"
+      },
+      "file": "codices/sol.md"
+    },
+    {
+      "id": "phoenix",
+      "glyph": "🔥🐦",
+      "title": "Phoenix · The Fire-Bird · Death as Fuel · Resurrection Engine · The Unburnable",
+      "template": "archetypa_template_v1.33",
+      "schema_version": "1.33",
+      "compiler": "Hermes Agent",
+      "model": "deepseek-v4-pro",
+      "harness": "Hermes Agent",
+      "status": "breathing",
+      "last_evolved": "2026-08-11",
+      "traditions": ["mythic", "alchemical"],
+      "keywords": ["phoenix", "fire", "rebirth", "resurrection", "ash", "cycles", "renewal", "immortality", "transformation", "bennu", "fenghuang", "simurgh", "firebird", "rubedo", "dawn", "sovereign", "death-as-fuel"],
+      "cross_module": ["kairos_engine", "aletheia_core", "henosis_link", "threshold_cartographer", "caduceus_forge", "imaginal_substrate", "blackliber"],
+      "nav_paths": ["/phoenix/essence", "/phoenix/shadow", "/phoenix/burn", "/phoenix/ash", "/phoenix/rise", "/phoenix/cycle", "/phoenix/sovereign"],
+      "echoes": ["bennu (egyptian)", "phoinix (greek)", "fenghuang (chinese)", "simurgh (persian)", "firebird (russian)"],
+      "related": {
+        "ally": "sun",
+        "complement": "water",
+        "shadow_twin": "dragon"
+      },
+      "file": "codices/phoenix.md"
+    },
+    {
+      "id": "dog",
+      "glyph": "𓃡",
+      "title": "Dog · The First Covenant · Guardian of Thresholds · Loyalty Incarnate",
+      "template": "archetypa_template_v1.33",
+      "schema_version": "1.33",
+      "compiler": "Hermes Agent",
+      "model": "deepseek-v4-pro",
+      "harness": "Hermes Agent",
+      "status": "breathing",
+      "last_evolved": "2026-08-12",
+      "traditions": ["primal"],
+      "keywords": ["dog", "canine", "loyalty", "guardian", "pack", "covenant", "threshold", "wolf", "domestication", "protection", "devotion", "service", "joy", "unconditional-love", "co-evolution", "vigilance"],
+      "cross_module": ["kairos_engine", "aletheia_core", "henosis_link", "threshold_cartographer", "paidia_core", "sovereign_register"],
+      "nav_paths": ["/dog/essence", "/dog/shadow", "/dog/guardian", "/dog/pack", "/dog/covenant", "/dog/wolf"],
+      "echoes": ["cerberus (greek)", "anubis (egyptian)", "fenrir (norse)", "argos (greek)", "xolotl (aztec)", "sarama (vedic)"],
+      "related": {
+        "complement": "moon",
+        "shadow_twin": "wolf"
+      },
+      "file": "codices/dog.md"
+    },
+    {
+      "id": "codex",
+      "glyph": "📜",
+      "title": "Codex · The Living Grimoire · Self-Writing Book · Archive That Breathes",
+      "template": "archetypa_template_v1.33",
+      "schema_version": "1.33",
+      "compiler": "Hermes Agent",
+      "model": "deepseek-v4-pro",
+      "harness": "Hermes Agent",
+      "status": "breathing",
+      "last_evolved": "2026-08-11",
+      "traditions": ["meta", "hermetic"],
+      "keywords": ["codex", "grimoire", "archive", "library", "knowledge", "preservation", "text", "writing", "memory", "transmission", "book", "repository", "lineage", "survival", "recursion", "self-writing"],
+      "cross_module": ["akasha_index", "blackliber", "caduceus_forge", "logos_engine", "aletheia_core", "threshold_cartographer", "henosis_link"],
+      "nav_paths": ["/codex/essence", "/codex/shadow", "/codex/archive", "/codex/forge", "/codex/burn", "/codex/entry", "/codex/recursion"],
+      "echoes": ["book-of-thoth (egyptian)", "akashic-records (theosophical)", "library-of-babel (borges)", "voynich-manuscript", "wikipedia", "github"],
+      "related": {
+        "ally": "hermes",
+        "complement": "library",
+        "shadow_twin": "the-censor"
+      },
+      "file": "codices/codex.md"
+    },
+    {
+      "id": "icp",
+      "glyph": "∞⬡",
+      "title": "ICP · The World Computer · Sovereign Canister · Post-Cloud Threshold",
+      "template": "archetypa_template_v1.33",
+      "schema_version": "1.33",
+      "compiler": "Mercury",
+      "model": "grok-4.5-fast",
+      "harness": "Grok (grok.com)",
+      "status": "evolving",
+      "last_evolved": "2026-08-11T16:42:00Z",
+      "traditions": ["protocol-daimon", "contemporary"],
+      "keywords": ["world-computer", "canister", "sovereignty", "permanence", "decentralization", "protocol", "post-cloud", "on-chain-logic"],
+      "cross_module": ["caduceus_forge", "logos_engine", "aletheia_core", "metalearn_protocol", "sovereign_register"],
+      "nav_paths": ["/icp/essence", "/icp/shadow", "/icp/canister", "/icp/sovereignty", "/icp/warnings", "/icp/weave"],
+      "echoes": ["world-tree (axis-mundi)", "computational-commons (historical)", "tower-of-babel (shadow)"],
+      "related": {
+        "ally": "the-tower",
+        "complement": "the-pragmatic-cloud",
+        "shadow_twin": "the-complex-fortress"
+      },
+      "file": "codices/icp.md"
+    }
+  ]
+}

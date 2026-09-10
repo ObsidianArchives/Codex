@@ -1,0 +1,13 @@
+# .gitignore — Codex
+
+# LOOM tracker (Zone 1 only — excluded from Zone 2/3 per Sandbox protocol)
+.loom/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+*.swp
+*.swo
+*~

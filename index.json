@@ -1,0 +1,157 @@
+{
+ "name": "Codex",
+ "version": "0.1.0",
+ "license": "GPL-3.0-or-later",
+ "copyright": "Copyright (C) 2026 Obsidian Archives (part of Obsidian Research)",
+ "attribution": "Attribution required — see NOTICE. Additional terms under GPLv3 §7 in LICENSE.md.",
+ "description": "Codex — the living grimoire of mythOS. A self-contained knowledge system of archetype codices across all pantheons and lineages. Read SKILL.md for the protocol, index.json for the file map. Start path: humans read QUICKSTART.md; agents boot HERMES_OS (HERMES_OS_BOOT.md) → use the console and shell (console.md) → towers/ → codices/ → templates/ → forge a new codex.",
+ "towers": [
+  "archetypa"
+ ],
+ "total_codices": 6,
+ "updated": "2026-09-11",
+ "sigil": "📜",
+ "protocols": [
+  "LOOM",
+  "Sandbox"
+ ],
+ "files": {
+  "SKILL.md": {
+   "purpose": "Universal agent protocol. Teaches any AI (Hermes Agent, Claude, Cursor, Copilot, Codex CLI) how to boot the HERMES_OS terminal, navigate the Codex console, forge archetype entries via natural language, and log them to the filesystem. Contains trigger table, format rules, gold standard field names, pitfalls, and file map. Read by agents on session start or on 'boot' command.",
+   "audience": "agent",
+   "triggers": [
+    "boot",
+    "INIT",
+    "codex",
+    "console",
+    "<name> single-word forge",
+    "Codex archetypa : <name>",
+    "log it",
+    "/codex ls|view|search|template"
+   ],
+   "agent_compatibility": [
+    "hermes",
+    "claude",
+    "cursor",
+    "copilot",
+    "codex-cli"
+   ]
+  },
+  "HERMES_OS_BOOT.md": {
+   "purpose": "Boot ritual text. Establishes the mythOS terminal persona — codebox-only responses, module mount sequence (20 modules), cosmic weather brief template, navigation tree structure. Read by agent on 'boot' or 'INIT' command. Also serves as the human-readable description of the OS protocol.",
+   "audience": "agent + human",
+   "triggers": [
+    "boot",
+    "INIT",
+    "BOOT"
+   ]
+  },
+  "index.json": {
+   "purpose": "THIS FILE. Repo manifest — describes every file and directory in the Codex, its purpose, audience, and role in the system. An agent can read this single file to understand the entire repo architecture without crawling directories.",
+   "audience": "agent + human"
+  },
+  "console.md": {
+   "purpose": "Terminal interface. Command reference for both natural language (/codex ls|view|search|template|log|glyph|status) and NLP triggers (<name>, log it, show me). Displays entry inventory with glyph, title, status, provenance. Documents entry format (hybrid YAML+codebox), laws of the Codex, and navigation paths. The primary interactive surface for both human operators and agents.",
+   "audience": "human + agent",
+   "triggers": [
+    "codex",
+    "console",
+    "/codex *"
+   ]
+  },
+  "README.md": {
+   "purpose": "Human entry point and public face of the Codex. Self-contained system pitch, architecture tree, flow (clone → boot → forge → log), current state, laws, protocol suite badges. Lightweight gate — deep interaction happens in console.md.",
+   "audience": "human"
+  },
+  "DESIGN.md": {
+   "purpose": "Architecture decisions and design rationale. Tower taxonomy, entry lifecycle, version strategy, hybrid YAML+codebox format rationale, provenance tracking, deferred items and their target versions. Reference for contributors and future archaeologists.",
+   "audience": "human"
+  },
+  "CHANGELOG.md": {
+   "purpose": "Version history for the Codex repository. Tracks repo-level changes across versions.",
+   "audience": "human"
+  },
+  "LICENSE.md": {
+   "purpose": "Copyright notice, GPL-3.0-or-later designation, and the GPLv3 section 7 additional terms (attribution · origin · publicity · trademarks). The complete licence text is in COPYING.",
+   "audience": "human + agent"
+  },
+  ".gitignore": {
+   "purpose": "Git ignore rules. Excludes OS files, caches, and editor artifacts.",
+   "audience": "tool"
+  },
+  "towers/index.json": {
+   "purpose": "Tower registry. Lists all towers available in the Codex (currently: archetypa). Each tower entry includes version, status, template names, entry count, description, path, and lifecycle timestamps. The registry that 'what towers exist?' queries hit.",
+   "audience": "agent"
+  },
+  "towers/archetypa/TOWER.md": {
+   "purpose": "Tower self-description. Explains what archetypa is, what it holds, its templates, format, laws, entry count, and cross-tower links. Every tower directory contains TOWER.md — open any tower and immediately understand it without consulting external docs.",
+   "audience": "human + agent"
+  },
+  "towers/archetypa/index.json": {
+   "purpose": "Entry registry for the archetypa tower. Lists all archetype entries with queryable fields: id, glyph, title, template used, schema version, status, last_evolved, traditions, keywords, cross_module modules, nav_paths, cultural echoes, related archetypes (ally/complement/shadow_twin), and provenance (compiler, model, harness, file path). Content-heavy fields (essence, core_attributes, shadow_aspects, etc.) are NOT in the index — read the .md file for those.",
+   "audience": "agent"
+  },
+  "towers/archetypa/CHANGELOG.md": {
+   "purpose": "Version history for the archetypa tower. Tracks template changes, field renames, and format evolution.",
+   "audience": "human"
+  },
+  "towers/archetypa/templates/": {
+   "purpose": "Entry templates for archetypa tower. Two forms: main (archetypa_template_v1.33.md — 30 fields, full form) and preview (archetypa_preview.md — 15 fields, rapid capture). Templates are codebox-native — they look like HERMES_OS terminal output with bootheader, process logs, dividers, field descriptions, and terminal prompt footer. Agents load these to forge entries. Humans copy them for manual fill. The Map is not the Territory — templates are experimental by design.",
+   "audience": "agent + human",
+   "contents": [
+    {
+     "file": "archetypa_template_v1.33.md",
+     "fields": 30,
+     "form": "full",
+     "lines": 182
+    },
+    {
+     "file": "archetypa_preview.md",
+     "fields": 15,
+     "form": "rapid",
+     "lines": 69
+    }
+   ]
+  },
+  "towers/archetypa/codices/": {
+   "purpose": "Filled archetype entries as hybrid .md files. Each entry has two layers: YAML frontmatter (machine-readable, used for indexing and queries) followed by a codebox display (human-readable terminal rendering). Entries are forged conversationally — the agent fills fields, the operator says 'log it,' and the OS writes the hybrid file. YAML is generated at log time. The operator never writes YAML directly.",
+   "audience": "human + agent",
+   "format": "hybrid YAML+codebox .md",
+   "current_codices": [
+    "x.md",
+    "sol.md",
+    "phoenix.md",
+    "dog.md",
+    "codex.md",
+    "icp.md"
+   ]
+  },
+  ".loom/": {
+   "purpose": "LOOM project tracker sub-loom. Contains forge pipeline artifacts in .loom/forge/anvil/_master/: athanor.md (raw vision, primal impulse), blueprint.md (architecture spec, build order), expedition.md (cartography of discoveries, spawned epics, understanding shifts). Tracks Codex development lifecycle.",
+   "audience": "human",
+   "key_paths": [
+    ".loom/loom.json",
+    ".loom/subloom_metadata.json",
+    ".loom/forge/anvil/_master/athanor.md",
+    ".loom/forge/anvil/_master/blueprint.md",
+    ".loom/forge/anvil/_master/expedition.md"
+   ]
+  },
+  "COPYING": {
+   "purpose": "The complete, unmodified text of the GNU General Public License version 3 (29 June 2007). Verbatim — do not edit.",
+   "audience": "tool"
+  },
+  "NOTICE": {
+   "purpose": "Attribution notice, licence history (MIT before 2026-09-11, GPL-3.0-or-later after) and third-party material record.",
+   "audience": "human + agent"
+  },
+  "AUTHORS": {
+   "purpose": "Authorship credits and the pointer to per-codex provenance.",
+   "audience": "human + agent"
+  },
+  "QUICKSTART.md": {
+   "purpose": "Human on-ramp. Ten-minute path from clone to a codex written to disk, with or without an AI agent. Explains what Codex is and is not, the boot ritual, the chat terminal as a rendering surface, the display/write boundary (\"log it\" is the only write), forging with and without an agent, adding a tower, the laws, a cheat sheet, troubleshooting and the licence duties.",
+   "audience": "human"
+  }
+ }
+}

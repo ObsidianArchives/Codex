@@ -1,0 +1,20 @@
+  Codex — mythOS Living Grimoire
+  Copyright (C) 2026 Obsidian Archives (part of Obsidian Research)
+  Licensed under the GNU General Public License, version 3 or later, with additional
+  terms under GPLv3 section 7 — see LICENSE.md. Complete licence text: COPYING.
+
+  ATTRIBUTION
+  This work is a project of Obsidian Archives, part of Obsidian Research.
+  Codices, templates and protocol were drafted in dialogue with Hermes Agent
+  (deepseek-v4-pro) and Grok (grok-4.5-fast). Per-codex provenance is recorded in
+  towers/archetypa/index.json under compiler · model · harness.
+
+  When you convey this work or a modified version of it, carry this attribution with it.
+
+  LICENCE HISTORY
+  · before 2026-09-11 — MIT License (MIT-era snapshots remain in archives/)
+  · on/after 2026-09-11 — GNU GPL v3.0 or later + GPLv3 section 7 additional terms
+
+  THIRD-PARTY MATERIAL
+  No third-party code, text or assets are known to be included in this version.
+  Any future inclusion must be recorded here with its own licence.
